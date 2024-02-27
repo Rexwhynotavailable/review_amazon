@@ -19,5 +19,10 @@ for c in data:
         new.append (c)
 print("每筆留言字數小餘100:",len(new))
 print(new[0])
-print(new[1])
-print(new[2])
+
+good_main = []
+for d in new:
+    if "good" in d:
+        good_main.append(d)
+print("每筆留言有提及good數量:", len(good_main))
+print(good_main[0])
